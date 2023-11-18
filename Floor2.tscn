@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://duqfr05vpxgqk"]
+[gd_scene load_steps=5 format=3 uid="uid://qmi5w6nvsqso"]
 
-[ext_resource type="Texture2D" uid="uid://bo5m2gd62o4si" path="res://Free/Terrain/Terrain (16x16).png" id="1_r23gr"]
+[ext_resource type="Texture2D" uid="uid://bo5m2gd62o4si" path="res://Free/Terrain/Terrain (16x16).png" id="1_cvlue"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cc3hs"]
-texture = ExtResource("1_r23gr")
+texture = ExtResource("1_cvlue")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0

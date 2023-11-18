@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0issyrhggoxu"]
 
-[ext_resource type="Texture2D" uid="uid://db404htu72jyw" path="res://Free/Background/Pink.png" id="1_byfej"]
-[ext_resource type="Script" path="res://Fons en moviment.gd" id="1_sqr24"]
+[ext_resource type="Script" path="res://Fons en moviment.gd" id="1_01y5o"]
+[ext_resource type="Texture2D" uid="uid://db404htu72jyw" path="res://Free/Background/Pink.png" id="2_skpj8"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
-script = ExtResource("1_sqr24")
+script = ExtResource("1_01y5o")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_mirroring = Vector2(1152, 0)
@@ -18,4 +18,4 @@ offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 4
-texture = ExtResource("1_byfej")
+texture = ExtResource("2_skpj8")

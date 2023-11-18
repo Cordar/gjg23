@@ -6,6 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0ckkv"]
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2(0.25, 0.25)
 
 [node name="Obstacle1" type="CharacterBody2D" parent="."]
 position = Vector2(908, 400)

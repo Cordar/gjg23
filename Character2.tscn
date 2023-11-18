@@ -1,50 +1,50 @@
-[gd_scene load_steps=17 format=3 uid="uid://dp3e86e84nqv4"]
+[gd_scene load_steps=17 format=3 uid="uid://d3l5nw40sf8nm"]
 
-[ext_resource type="Script" path="res://Personatge 1.gd" id="1_30ub7"]
-[ext_resource type="Texture2D" uid="uid://ceagsc8f6unna" path="res://Free/Main Characters/Ninja Frog/Run (32x32).png" id="1_e01r0"]
+[ext_resource type="Script" path="res://Personatge 1.gd" id="1_bo733"]
+[ext_resource type="Texture2D" uid="uid://ceagsc8f6unna" path="res://Free/Main Characters/Ninja Frog/Run (32x32).png" id="2_p55r1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wr66n"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_osjnv"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cd0qy"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v03sf"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k0xj0"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u6ws7"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e0oc3"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s0egi"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(256, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k0d6j"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(288, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7r5kh"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(320, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eobob"]
-atlas = ExtResource("1_e01r0")
+atlas = ExtResource("2_p55r1")
 region = Rect2(352, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_aw2t8"]
@@ -97,7 +97,7 @@ height = 24.0
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(3, 3)
-script = ExtResource("1_30ub7")
+script = ExtResource("1_bo733")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, -2)

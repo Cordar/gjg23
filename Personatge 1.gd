@@ -4,11 +4,13 @@ extends CharacterBody2D
 var jumpVelocity:float = 0.0
 var jumpTimer:float = 0.0
 var direction = 0.0
+var speed = 200
 
 func _ready():
 	pass # Replace with function body.
 
-func _process(delta):
+func _physics_process(delta):
+	position.x += speed * delta
 
 	if (Input.is_action_just_pressed("ui_up")):
 		jumpVelocity = -600 - abs(direction / 3)
