@@ -26,3 +26,7 @@ func _process(delta):
 
 	velocity.x = (velocity.x + direction) / 2
 	move_and_slide()
+
+
+func _on_area_obstacles_body_entered(body:Node2D):
+	get_tree().reload_current_scene()

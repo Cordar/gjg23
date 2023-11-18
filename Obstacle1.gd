@@ -2,13 +2,11 @@ extends CharacterBody2D
 
 class_name Obstacle1
 
-var speed = 20
-var velocy = Vector2()
+var speed = 200
 
+# Function that moves the object from right to left of the screen
 func _physics_process(delta):
-	velocy.x = -1  # Set the x-component of velocity
-	velocy = velocity.normalized() * speed * delta
-	velocy = move_and_collide(velocy)
+	position.x -= speed * delta
 
 func _on_Hurt_area_entered(HurtBox):
 	queue_free()

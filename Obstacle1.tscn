@@ -3,30 +3,24 @@
 [ext_resource type="Script" path="res://Obstacle1.gd" id="1_lqia7"]
 [ext_resource type="Texture2D" uid="uid://3bkm1kxm5u8g" path="res://Free/Items/Boxes/Box1/Idle.png" id="2_5pb8k"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0vsu8"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ckkv"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Obstacle1" type="CharacterBody2D" parent="."]
 position = Vector2(908, 400)
 scale = Vector2(8, 8)
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_lqia7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Obstacle1"]
 texture_filter = 1
 texture = ExtResource("2_5pb8k")
 
-[node name="Hurt" type="Area2D" parent="Obstacle1"]
-position = Vector2(-113.5, -50)
-scale = Vector2(0.125, 0.125)
-
-[node name="HurtBox" type="CollisionShape2D" parent="Obstacle1/Hurt"]
-position = Vector2(908, 400)
-scale = Vector2(8, 8)
-shape = SubResource("RectangleShape2D_0vsu8")
-
 [node name="Life" type="Timer" parent="Obstacle1"]
 one_shot = true
 autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle1"]
+shape = SubResource("RectangleShape2D_0ckkv")

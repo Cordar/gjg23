@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dp3e86e84nqv4"]
+[gd_scene load_steps=17 format=3 uid="uid://dp3e86e84nqv4"]
 
 [ext_resource type="Script" path="res://Personatge 1.gd" id="1_30ub7"]
 [ext_resource type="Texture2D" uid="uid://ceagsc8f6unna" path="res://Free/Main Characters/Ninja Frog/Run (32x32).png" id="1_e01r0"]
@@ -88,16 +88,30 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cfpbe"]
+radius = 8.0
+height = 20.0
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_puyes"]
 height = 24.0
 
-[node name="Node2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_30ub7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, -2)
 sprite_frames = SubResource("SpriteFrames_aw2t8")
 
+[node name="AreaObstacles" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaObstacles"]
+position = Vector2(-1, -1)
+shape = SubResource("CapsuleShape2D_cfpbe")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -1)
 shape = SubResource("CapsuleShape2D_puyes")
+
+[connection signal="body_entered" from="AreaObstacles" to="." method="_on_area_obstacles_body_entered"]
