@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgs422ykx2dt0"]
+
+[ext_resource type="Script" path="res://scenes/Game.gd" id="1_lniv4"]
+[ext_resource type="PackedScene" uid="uid://dp3e86e84nqv4" path="res://scenes/Player.tscn" id="2_08ny7"]
+[ext_resource type="Texture2D" uid="uid://db404htu72jyw" path="res://assets/Background/Pink.png" id="3_mjl7t"]
+[ext_resource type="PackedScene" uid="uid://dk6p621a114uc" path="res://scenes/Obstacles/ObstacleBox.tscn" id="5_nsr1g"]
+[ext_resource type="PackedScene" uid="uid://duqfr05vpxgqk" path="res://scenes/Floor.tscn" id="6_t3hqq"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_lniv4")
+
+[node name="Player" parent="." instance=ExtResource("2_08ny7")]
+position = Vector2(200, 500)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+position = Vector2(125, -500)
+remote_path = NodePath("../../Camera2D")
+
+[node name="Floor" parent="." instance=ExtResource("6_t3hqq")]
+position = Vector2(0, 1)
+
+[node name="ObstacleBox" parent="." instance=ExtResource("5_nsr1g")]
+position = Vector2(331, 456)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, -1000)
+scale = Vector2(3, 3)
+limit_top = 0
+limit_bottom = 400
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(588, 388)
+scale = Vector2(30.9844, 16.5)
+texture = ExtResource("3_mjl7t")
