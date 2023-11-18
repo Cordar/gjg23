@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgs422ykx2dt0"]
+
+[ext_resource type="PackedScene" uid="uid://duqfr05vpxgqk" path="res://Terra.tscn" id="2_hj2ct"]
+[ext_resource type="PackedScene" uid="uid://dp3e86e84nqv4" path="res://Personatge 1.tscn" id="3_bdwk7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j40gs"]
+size = Vector2(1147, 166)
+
+[node name="Node" type="Node"]
+
+[node name="Node2D2" parent="." instance=ExtResource("3_bdwk7")]
+position = Vector2(114, 350)
+scale = Vector2(3, 3)
+
+[node name="Node2D" parent="." instance=ExtResource("2_hj2ct")]
+position = Vector2(99, 551)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D"]
+position = Vector2(474.5, 14)
+shape = SubResource("RectangleShape2D_j40gs")
