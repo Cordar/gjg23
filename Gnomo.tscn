@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://5w7brq0iwhrr"]
+
+[ext_resource type="Texture2D" uid="uid://bp05fdehp6uhe" path="res://assets/Heaven/gnome_body.png" id="1_kuw3p"]
+[ext_resource type="Texture2D" uid="uid://cn2vtoo5gs54t" path="res://assets/Heaven/gnome_rainbow.png" id="1_ts5cg"]
+[ext_resource type="Texture2D" uid="uid://6kvxbhcbhmg2" path="res://assets/Heaven/gnome_moustache.png" id="2_qwuw3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0d278"]
+size = Vector2(285, 920)
+
+[node name="Node2D" type="Node"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="GnomeBody" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(13, -124)
+texture = ExtResource("1_kuw3p")
+
+[node name="GnomeMoustache" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(13, -166)
+texture = ExtResource("2_qwuw3")
+
+[node name="GnomeRainbow" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(16, 374)
+scale = Vector2(1, 1.44086)
+texture = ExtResource("1_ts5cg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(16.5, 450)
+shape = SubResource("RectangleShape2D_0d278")
