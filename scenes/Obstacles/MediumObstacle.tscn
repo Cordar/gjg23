@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://pi3qxhnxf4js"]
+
+[ext_resource type="Texture2D" uid="uid://dou7jjtgj7p1t" path="res://assets/hell/Cartell.png" id="1_el45s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_obfnl"]
+size = Vector2(107, 153)
+
+[node name="MediumObstacle" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(8.5, -18.5)
+shape = SubResource("RectangleShape2D_obfnl")
+
+[node name="Sign" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_el45s")

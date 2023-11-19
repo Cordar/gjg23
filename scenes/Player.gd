@@ -17,6 +17,8 @@ func _physics_process(delta):
 	if not is_on_floor():
 		transform.origin.y += delta * gravity
 	vertical_force -= 60.0 * delta
+	if vertical_force < 0.0: 
+		vertical_force = 0.0
 	transform.origin.y -= vertical_force
 
 	# Move the player based on the calculated velocity

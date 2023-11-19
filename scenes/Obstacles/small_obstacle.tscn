@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://13cm7ouaxc7n"]
+
+[ext_resource type="Texture2D" uid="uid://dle7pd3w6y8uh" path="res://assets/hell/Roca.png" id="1_sxgvx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kaxaf"]
+radius = 83.006
+
+[node name="SmallObstacle" type="Node2D"]
+position = Vector2(4, -16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Rock" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -3)
+scale = Vector2(3, 3)
+texture = ExtResource("1_sxgvx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-6, 79)
+shape = SubResource("CircleShape2D_kaxaf")
