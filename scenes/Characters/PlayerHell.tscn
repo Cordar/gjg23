@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://cyflwyqbn1a7q"]
+
+[ext_resource type="Texture2D" uid="uid://0vehivrc0yfu" path="res://assets/hell/Salt.png" id="1_yso6l"]
+[ext_resource type="Texture2D" uid="uid://dpf86ykeuf3il" path="res://assets/hell/Srun.png" id="2_dktvk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1o44"]
+atlas = ExtResource("1_yso6l")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umyfq"]
+atlas = ExtResource("1_yso6l")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mngg"]
+atlas = ExtResource("1_yso6l")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2oksp"]
+atlas = ExtResource("2_dktvk")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wau0k"]
+atlas = ExtResource("2_dktvk")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1iacw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1o44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umyfq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mngg")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2oksp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wau0k")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="PlayerHell" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1iacw")
+animation = &"jump"
+frame = 1
+frame_progress = 0.974614
