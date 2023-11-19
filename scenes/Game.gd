@@ -2,8 +2,8 @@ extends Node
 
 var is_dimension_heaven = false
 
-var heavenBackgroundTexture = preload("res://assets/Background/Green.png")
-var hellBackgroundTexture = preload("res://assets/Background/Pink.png")
+var heavenBackgroundTexture = preload("res://assets/heaven/background_full.png")
+var hellBackgroundTexture = preload("res://assets/hell/Fondo.png")
 @onready var _background = $ParallaxBackground/ParallaxLayer/Background
 
 func _input(event):
