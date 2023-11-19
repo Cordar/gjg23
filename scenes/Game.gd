@@ -4,6 +4,7 @@ var is_dimension_heaven = true
 
 var heavenBackgroundTexture = preload("res://assets/Background/Pink.png")
 var hellBackgroundTexture = preload("res://assets/Background/Green.png")
+@onready var _background = $ParallaxBackground/ParallaxLayer/Background
 
 func _input(event):
 	if(event.is_action_released("change_dimension")):
@@ -12,6 +13,8 @@ func _input(event):
 func change_dimension():
 	is_dimension_heaven = not is_dimension_heaven
 	if is_dimension_heaven:
-		$ParallaxBackground/ParallaxLayer/Background.set_texture(heavenBackgroundTexture)
+		_background.set_texture(heavenBackgroundTexture)
+		$Player.activate_heaven()
 	else:
-		$ParallaxBackground/ParallaxLayer/Background.set_texture(hellBackgroundTexture)
+		_background.set_texture(hellBackgroundTexture)
+		$Player.activate_hell()

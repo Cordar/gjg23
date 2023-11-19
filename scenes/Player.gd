@@ -23,9 +23,13 @@ func _physics_process(delta):
 	transform.origin.x += speed * delta
 	move_and_slide()
 
-
-
-
-
 func _on_area_obstacles_body_entered(body:Node2D):
 	get_tree().reload_current_scene()
+
+func activate_hell():
+	$PlayerHeaven.visible = false
+	$PlayerHell.visible = true
+
+func activate_heaven():
+	$PlayerHeaven.visible = true
+	$PlayerHell.visible = false

@@ -26,7 +26,6 @@ limit_bottom = 400
 motion_mirroring = Vector2(1980, 0)
 
 [node name="Background" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-visible = false
 z_index = -1
 position = Vector2(584, 382)
 scale = Vector2(30.9844, 16.5)

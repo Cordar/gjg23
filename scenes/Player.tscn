@@ -1,92 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://dp3e86e84nqv4"]
+[gd_scene load_steps=6 format=3 uid="uid://dp3e86e84nqv4"]
 
 [ext_resource type="Script" path="res://scenes/Player.gd" id="1_30ub7"]
-[ext_resource type="Texture2D" uid="uid://ceagsc8f6unna" path="res://assets/Main Characters/Ninja Frog/Run (32x32).png" id="1_e01r0"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wr66n"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_osjnv"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cd0qy"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v03sf"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k0xj0"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_u6ws7"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e0oc3"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s0egi"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(256, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k0d6j"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(288, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7r5kh"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(320, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eobob"]
-atlas = ExtResource("1_e01r0")
-region = Rect2(352, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_aw2t8"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wr66n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_osjnv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cd0qy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v03sf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k0xj0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_u6ws7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e0oc3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s0egi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k0d6j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7r5kh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eobob")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://bxwppc2dimlci" path="res://scenes/Characters/PlayerHeaven.tscn" id="2_8emnl"]
+[ext_resource type="PackedScene" uid="uid://cyflwyqbn1a7q" path="res://scenes/Characters/PlayerHell.tscn" id="3_pqyxq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cfpbe"]
 radius = 8.0
@@ -99,10 +15,6 @@ height = 24.0
 scale = Vector2(3, 3)
 script = ExtResource("1_30ub7")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -2)
-sprite_frames = SubResource("SpriteFrames_aw2t8")
-
 [node name="AreaObstacles" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 2
@@ -114,5 +26,10 @@ shape = SubResource("CapsuleShape2D_cfpbe")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -1)
 shape = SubResource("CapsuleShape2D_puyes")
+
+[node name="PlayerHeaven" parent="." instance=ExtResource("2_8emnl")]
+position = Vector2(-2, -2)
+
+[node name="PlayerHell" parent="." instance=ExtResource("3_pqyxq")]
 
 [connection signal="body_entered" from="AreaObstacles" to="." method="_on_area_obstacles_body_entered"]
