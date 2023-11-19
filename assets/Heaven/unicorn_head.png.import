@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxl8qldc7n01p"
-path="res://.godot/imported/unicorn_head.png-e01ed36ea6609b763231c46ad8a1f5e5.ctex"
+uid="uid://b2yavln3kmhn7"
+path="res://.godot/imported/unicorn_head.png-c37ad82c50f1eaf870092ca4f4842aa7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/unicorn_head.png"
-dest_files=["res://.godot/imported/unicorn_head.png-e01ed36ea6609b763231c46ad8a1f5e5.ctex"]
+source_file="res://assets/heaven/unicorn_head.png"
+dest_files=["res://.godot/imported/unicorn_head.png-c37ad82c50f1eaf870092ca4f4842aa7.ctex"]
 
 [params]
 

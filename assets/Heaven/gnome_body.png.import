@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbiuorwr8t1x1"
-path="res://.godot/imported/gnome_body.png-1d0d89d87a34fc02e9a2243fd5948d31.ctex"
+uid="uid://bp05fdehp6uhe"
+path="res://.godot/imported/gnome_body.png-78cdcb94dff284f496bb23d98f011efd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/gnome_body.png"
-dest_files=["res://.godot/imported/gnome_body.png-1d0d89d87a34fc02e9a2243fd5948d31.ctex"]
+source_file="res://assets/heaven/gnome_body.png"
+dest_files=["res://.godot/imported/gnome_body.png-78cdcb94dff284f496bb23d98f011efd.ctex"]
 
 [params]
 

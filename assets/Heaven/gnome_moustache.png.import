@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsgfwdmy8cryi"
-path="res://.godot/imported/gnome_moustache.png-068167264bd3fc20b9a6f647eb88175c.ctex"
+uid="uid://6kvxbhcbhmg2"
+path="res://.godot/imported/gnome_moustache.png-18749d20a9b89b4bd7b3cb101108401c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/gnome_moustache.png"
-dest_files=["res://.godot/imported/gnome_moustache.png-068167264bd3fc20b9a6f647eb88175c.ctex"]
+source_file="res://assets/heaven/gnome_moustache.png"
+dest_files=["res://.godot/imported/gnome_moustache.png-18749d20a9b89b4bd7b3cb101108401c.ctex"]
 
 [params]
 

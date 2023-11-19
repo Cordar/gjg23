@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b52wnfn55qx0v"
-path="res://.godot/imported/r_arm_idle.png-a120207a52682316e146029792f2a67a.ctex"
+uid="uid://dohvifw8gbggd"
+path="res://.godot/imported/r_arm_idle.png-8be2815ab5b27c3ebc1cd35ee22373e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/MC_Butterfly/r_arm_idle.png"
-dest_files=["res://.godot/imported/r_arm_idle.png-a120207a52682316e146029792f2a67a.ctex"]
+source_file="res://assets/heaven/MC_Butterfly/r_arm_idle.png"
+dest_files=["res://.godot/imported/r_arm_idle.png-8be2815ab5b27c3ebc1cd35ee22373e4.ctex"]
 
 [params]
 

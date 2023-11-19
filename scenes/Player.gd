@@ -14,7 +14,12 @@ func _physics_process(delta):
 
 	# Apply gravity when not on the floor
 	if not is_on_floor():
+		$PlayerHell/AnimatedSprite.play("jump")
+		$PlayerHeaven/AnimationPlayer.play("jump")
 		transform.origin.y += delta * gravity
+	else:
+		$PlayerHell/AnimatedSprite.play("run")
+		$PlayerHeaven/AnimationPlayer.play("run")
 	vertical_force -= 60.0 * delta
 	if vertical_force < 0.0: 
 		vertical_force = 0.0
@@ -28,9 +33,11 @@ func _on_area_obstacles_body_entered(body:Node2D):
 	get_tree().reload_current_scene()
 
 func activate_hell():
+	print("hell")
 	$PlayerHeaven.visible = false
 	$PlayerHell.visible = true
 
 func activate_heaven():
+	print("heaven")
 	$PlayerHeaven.visible = true
 	$PlayerHell.visible = false

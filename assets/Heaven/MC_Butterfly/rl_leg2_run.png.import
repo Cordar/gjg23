@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg8rgh18wwbhh"
-path="res://.godot/imported/rl_leg2_run.png-ae413c163d05a0c7e28825b460970fc8.ctex"
+uid="uid://d16x1nv4a5kib"
+path="res://.godot/imported/rl_leg2_run.png-d7c0f5c557f39b091aa4cafe2a1d5329.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/MC_Butterfly/rl_leg2_run.png"
-dest_files=["res://.godot/imported/rl_leg2_run.png-ae413c163d05a0c7e28825b460970fc8.ctex"]
+source_file="res://assets/heaven/MC_Butterfly/rl_leg2_run.png"
+dest_files=["res://.godot/imported/rl_leg2_run.png-d7c0f5c557f39b091aa4cafe2a1d5329.ctex"]
 
 [params]
 

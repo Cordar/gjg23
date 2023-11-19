@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di3c7djyctmrm"
-path="res://.godot/imported/open_eyes.png-00149c01980990eff73dffc7ddb1d472.ctex"
+uid="uid://baq3xec1lrcro"
+path="res://.godot/imported/open_eyes.png-d74f1cda69bcd726f575e05143acd238.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/MC_Butterfly/open_eyes.png"
-dest_files=["res://.godot/imported/open_eyes.png-00149c01980990eff73dffc7ddb1d472.ctex"]
+source_file="res://assets/heaven/MC_Butterfly/open_eyes.png"
+dest_files=["res://.godot/imported/open_eyes.png-d74f1cda69bcd726f575e05143acd238.ctex"]
 
 [params]
 

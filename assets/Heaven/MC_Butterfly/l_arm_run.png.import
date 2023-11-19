@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blpbqobtgql3h"
-path="res://.godot/imported/l_arm_run.png-6fe713ff3800a5a6dae056394d1a1743.ctex"
+uid="uid://blbbongxit5wm"
+path="res://.godot/imported/l_arm_run.png-8430102993323b9b85e1334ce2783682.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/MC_Butterfly/l_arm_run.png"
-dest_files=["res://.godot/imported/l_arm_run.png-6fe713ff3800a5a6dae056394d1a1743.ctex"]
+source_file="res://assets/heaven/MC_Butterfly/l_arm_run.png"
+dest_files=["res://.godot/imported/l_arm_run.png-8430102993323b9b85e1334ce2783682.ctex"]
 
 [params]
 

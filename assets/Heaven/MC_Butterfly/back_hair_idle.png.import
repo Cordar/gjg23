@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwj04k4cx7gmb"
-path="res://.godot/imported/back_hair_idle.png-7e59df613990d935b58b69f749bf1a60.ctex"
+uid="uid://ci10dybmxs86l"
+path="res://.godot/imported/back_hair_idle.png-5ff0d92dc120cbc74b7e60e91d53fec3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Heaven/MC_Butterfly/back_hair_idle.png"
-dest_files=["res://.godot/imported/back_hair_idle.png-7e59df613990d935b58b69f749bf1a60.ctex"]
+source_file="res://assets/heaven/MC_Butterfly/back_hair_idle.png"
+dest_files=["res://.godot/imported/back_hair_idle.png-5ff0d92dc120cbc74b7e60e91d53fec3.ctex"]
 
 [params]
 
