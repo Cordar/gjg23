@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnjijawkvm422"]
+
+[ext_resource type="Texture2D" uid="uid://ckuiyt8rmgwbu" path="res://AssetsAlex/assetshell/Terra.png" id="1_bm3f1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_piiv1"]
+size = Vector2(4162, 73)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Colider" type="CollisionShape2D" parent="."]
+position = Vector2(2081, 616.5)
+shape = SubResource("RectangleShape2D_piiv1")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(900, 0)
+
+[node name="Terra" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(451, 423)
+scale = Vector2(2, 1)
+texture = ExtResource("1_bm3f1")

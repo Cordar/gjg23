@@ -12,6 +12,6 @@ func _input(event):
 func change_dimension():
 	is_dimension_heaven = not is_dimension_heaven
 	if is_dimension_heaven:
-		$Background.set_texture(heavenBackgroundTexture)
+		$ParallaxBackground/ParallaxLayer/Background.set_texture(heavenBackgroundTexture)
 	else:
-		$Background.set_texture(hellBackgroundTexture)
+		$ParallaxBackground/ParallaxLayer/Background.set_texture(hellBackgroundTexture)

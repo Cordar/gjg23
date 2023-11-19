@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://kvydhi8xalyc"]
+
+[ext_resource type="Texture2D" uid="uid://rgfmpbscxjmj" path="res://AssetsAlex/assetshell/End.png" id="1_3mo5t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2w8p"]
+size = Vector2(162, 322)
+
+[node name="Cart" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture_filter = 1
+position = Vector2(521, 240)
+scale = Vector2(3.42, 5.22)
+texture = ExtResource("1_3mo5t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(464, 259)
+shape = SubResource("RectangleShape2D_s2w8p")

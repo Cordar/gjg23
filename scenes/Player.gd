@@ -1,33 +1,30 @@
 extends CharacterBody2D
 
-
-var jumpVelocity:float = 0.0
-var jumpTimer:float = 0.0
-var direction = 0.0
-var speed = 200
-
-func _ready():
-	pass # Replace with function body.
+var jump_velocity: float = 20.0
+var jump_timer: float = 0.0
+var speed: float = 400.0
+var vertical_force: float = 0.0
+var gravity: float = 800.0
 
 func _physics_process(delta):
-	position.x += speed * delta
 
-	if (Input.is_action_just_pressed("ui_up")):
-		jumpVelocity = -600 - abs(direction / 3)
+	# Handle jumping
+	if Input.is_action_just_pressed("ui_up") and is_on_floor():
+		jump_timer = 0.0
+		vertical_force = 35.0
 
-	if (Input.is_action_pressed("ui_up") && jumpTimer < 0.25):
-		velocity.y = jumpVelocity
-		jumpTimer += delta
+	# Apply gravity when not on the floor
+	if not is_on_floor():
+		transform.origin.y += delta * gravity
+	vertical_force -= 60.0 * delta
+	transform.origin.y -= vertical_force
 
-	if (!Input.is_action_pressed("ui_up") && is_on_floor()):
-		jumpTimer = 0.0
-		jumpVelocity = 0.0
-
-	if (!is_on_floor()):
-		velocity.y += 40
-
-	velocity.x = (velocity.x + direction) / 2
+	# Move the player based on the calculated velocity
+	transform.origin.x += speed * delta
 	move_and_slide()
+
+
+
 
 
 func _on_area_obstacles_body_entered(body:Node2D):

@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://ne216dev0n8a"]
+
+[ext_resource type="Texture2D" uid="uid://deklc2kjxtd0h" path="res://assets/Items/Boxes/Box3/Idle.png" id="1_0xwta"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_juler"]
+
+[node name="ObstacleBox2" type="Node2D"]
+position = Vector2(2, 1)
+
+[node name="CharacterBody" type="CharacterBody2D" parent="."]
+position = Vector2(-2, -1)
+collision_layer = 2
+collision_mask = 0
+
+[node name="ObstacleBox2" type="Sprite2D" parent="CharacterBody"]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_0xwta")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody"]
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_juler")
+disabled = true
+
+[node name="Life" type="Timer" parent="."]
+one_shot = true
+autostart = true

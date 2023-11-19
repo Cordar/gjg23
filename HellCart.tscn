@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://deivl266a0e5"]
+
+[ext_resource type="Texture2D" uid="uid://bybs7lf23p7il" path="res://AssetsAlex/assetshell/Carro.png" id="1_mcve1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mdn18"]
+size = Vector2(157, 135)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(435.5, 276.5)
+shape = SubResource("RectangleShape2D_mdn18")
+
+[node name="Carro" type="Sprite2D" parent="."]
+position = Vector2(435, 262)
+scale = Vector2(2.94, 2.93)
+texture = ExtResource("1_mcve1")
