@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/Player.gd" id="1_30ub7"]
 [ext_resource type="PackedScene" uid="uid://bxwppc2dimlci" path="res://scenes/Characters/PlayerHeaven.tscn" id="2_8emnl"]
-[ext_resource type="PackedScene" path="res://scenes/Characters/PlayerHell.tscn" id="3_pqyxq"]
+[ext_resource type="PackedScene" uid="uid://cyflwyqbn1a7q" path="res://scenes/Characters/PlayerHell.tscn" id="3_pqyxq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cfpbe"]
 radius = 8.0
@@ -30,9 +30,10 @@ shape = SubResource("CapsuleShape2D_puyes")
 [node name="PlayerHeaven" parent="." instance=ExtResource("2_8emnl")]
 visible = false
 z_index = 5
-position = Vector2(-0.333333, 4.33333)
+position = Vector2(0.666667, -6.66667)
 scale = Vector2(0.2, 0.2)
 
 [node name="PlayerHell" parent="." instance=ExtResource("3_pqyxq")]
+position = Vector2(-3.66667, -21.6667)
 
 [connection signal="body_entered" from="AreaObstacles" to="." method="_on_area_obstacles_body_entered"]

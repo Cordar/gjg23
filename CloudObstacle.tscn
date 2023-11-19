@@ -1,16 +1,18 @@
 [gd_scene load_steps=5 format=3 uid="uid://lu5x45gxs5ot"]
 
-[ext_resource type="Texture2D" uid="uid://f63whnmih8r6" path="res://assets/Heaven/cloud_r_arm.png" id="1_c7hpb"]
-[ext_resource type="Texture2D" uid="uid://docux82yvxrar" path="res://assets/Heaven/cloud_body.png" id="2_soip8"]
-[ext_resource type="Texture2D" uid="uid://0fov5p8juroe" path="res://assets/Heaven/cloud_l_arm.png" id="3_xmfpm"]
+[ext_resource type="Texture2D" uid="uid://c5gejvjxu8q8e" path="res://assets/Heaven/cloud_r_arm.png" id="1_c7hpb"]
+[ext_resource type="Texture2D" uid="uid://dvrtr3vb26o1x" path="res://assets/Heaven/cloud_body.png" id="2_soip8"]
+[ext_resource type="Texture2D" uid="uid://crjn6q86oxbpu" path="res://assets/Heaven/cloud_l_arm.png" id="3_xmfpm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m4k2h"]
 radius = 209.002
 
-[node name="Node2D" type="Node2D"]
+[node name="CloudObstacle" type="Node2D"]
 visible = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+collision_mask = 0
 
 [node name="CloudRArm" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(-283, 8)

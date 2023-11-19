@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://i7ry7tmmry5"]
 
-[ext_resource type="Texture2D" uid="uid://cbiuorwr8t1x1" path="res://assets/Heaven/gnome_body.png" id="1_rak64"]
-[ext_resource type="Texture2D" uid="uid://dsgfwdmy8cryi" path="res://assets/Heaven/gnome_moustache.png" id="2_kpdsy"]
-[ext_resource type="Texture2D" uid="uid://b6gkfdqxbex7x" path="res://assets/Heaven/gnome_rainbow.png" id="3_4ggdv"]
+[ext_resource type="Texture2D" uid="uid://bp05fdehp6uhe" path="res://assets/Heaven/gnome_body.png" id="1_rak64"]
+[ext_resource type="Texture2D" uid="uid://6kvxbhcbhmg2" path="res://assets/Heaven/gnome_moustache.png" id="2_kpdsy"]
+[ext_resource type="Texture2D" uid="uid://cn2vtoo5gs54t" path="res://assets/Heaven/gnome_rainbow.png" id="3_4ggdv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0d278"]
 size = Vector2(116.958, 558.472)
@@ -12,7 +12,7 @@ scale = Vector2(0.75, 0.75)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 scale = Vector2(0.75, 0.75)
-collision_layer = 2
+collision_layer = 4
 collision_mask = 0
 
 [node name="GnomeBody" type="Sprite2D" parent="StaticBody2D"]

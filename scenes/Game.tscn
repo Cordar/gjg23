@@ -22,7 +22,7 @@ script = ExtResource("1_lniv4")
 position = Vector2(0, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(94.0001, -994)
+position = Vector2(94, -994)
 scale = Vector2(3, 3)
 zoom = Vector2(0.75, 0.75)
 limit_left = 0
@@ -41,94 +41,149 @@ position = Vector2(1020, 197)
 scale = Vector2(3, 2)
 texture = ExtResource("3_dv3mp")
 
-[node name="ObstaclesHeeaven" type="Node" parent="."]
+[node name="ObstaclesHeaven" type="Node" parent="."]
 
-[node name="Unicorn" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+[node name="Unicorn" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
 position = Vector2(925, 552)
 
-[node name="Unicorn2" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+[node name="Unicorn2" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
 position = Vector2(2045, 551)
 
-[node name="Node2D2" parent="ObstaclesHeeaven" instance=ExtResource("6_ccqnv")]
+[node name="MommyUnicorn2" parent="ObstaclesHeaven" instance=ExtResource("6_ccqnv")]
 position = Vector2(1286, 557)
 
-[node name="Node2D" parent="ObstaclesHeeaven" instance=ExtResource("12_qlrd8")]
+[node name="GnomeRainbow" parent="ObstaclesHeaven" instance=ExtResource("12_qlrd8")]
+visible = false
 position = Vector2(3401, 109)
 
-[node name="Uniconr6" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+[node name="Unicorn6" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
 position = Vector2(6470, 568)
 
-[node name="Uniconr7" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+[node name="Unicorn7" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
 position = Vector2(6808, 566)
 
-[node name="MommyUnicorn" parent="ObstaclesHeeaven" instance=ExtResource("6_ccqnv")]
+[node name="MommyUnicorn" parent="ObstaclesHeaven" instance=ExtResource("6_ccqnv")]
 position = Vector2(6956, 549)
 
-[node name="Node2D3" parent="ObstaclesHeeaven" instance=ExtResource("7_oxd3m")]
+[node name="CloudObstacle2" parent="ObstaclesHeaven" instance=ExtResource("7_oxd3m")]
+position = Vector2(2420, 166)
+
+[node name="CloudObstacle" parent="ObstaclesHeaven" instance=ExtResource("7_oxd3m")]
 position = Vector2(5388, 169)
 
-[node name="ObtaclesHell" type="Node" parent="."]
+[node name="Unicorn4" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(4658, 555)
 
-[node name="Cart" parent="ObtaclesHell" instance=ExtResource("7_i5yvu")]
+[node name="Unicorn5" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(4036, 565)
+
+[node name="Unicorn9" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(4367, 555)
+
+[node name="Unicorn8" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(4979, 548)
+
+[node name="Unicorn10" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(8232, 560)
+
+[node name="Uniconr6" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(8104, 562)
+
+[node name="Unicorn3" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(2702, 558)
+
+[node name="Uniconr7" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
+visible = false
+position = Vector2(8564, 560)
+
+[node name="Node2D2" parent="ObstaclesHeaven" instance=ExtResource("7_oxd3m")]
+position = Vector2(7958, 45)
+
+[node name="ObstaclesHell" type="Node" parent="."]
+
+[node name="Cart" parent="ObstaclesHell" instance=ExtResource("7_i5yvu")]
 position = Vector2(1260, 228)
 
-[node name="SmallObstacle" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
+[node name="SmallObstacle" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
 position = Vector2(617, 526)
 
-[node name="Node2D" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
+[node name="Node2D" parent="ObstaclesHell" instance=ExtResource("11_u0f4t")]
 position = Vector2(2726, 343)
 
-[node name="MediumObstacle" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
+[node name="MediumObstacle" parent="ObstaclesHell" instance=ExtResource("9_ososx")]
 position = Vector2(919, 597)
 
-[node name="BigObstacle" parent="ObtaclesHell" instance=ExtResource("10_1lj3y")]
+[node name="BigObstacle" parent="ObstaclesHell" instance=ExtResource("10_1lj3y")]
 position = Vector2(1293, 544)
 
-[node name="MediumObstacle2" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
+[node name="MediumObstacle2" parent="ObstaclesHell" instance=ExtResource("9_ososx")]
 position = Vector2(2083, 594)
 
-[node name="BigObstacle2" parent="ObtaclesHell" instance=ExtResource("10_1lj3y")]
+[node name="BigObstacle2" parent="ObstaclesHell" instance=ExtResource("10_1lj3y")]
 position = Vector2(3047, 548)
 
-[node name="SmallObstacle2" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
+[node name="SmallObstacle2" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
 position = Vector2(2402, 523)
 scale = Vector2(-0.988237, 1.03042)
 
-[node name="MediumObstacle3" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
+[node name="MediumObstacle3" parent="ObstaclesHell" instance=ExtResource("9_ososx")]
 position = Vector2(3932, 590)
 scale = Vector2(0.998276, 1)
 
-[node name="SmallObstacle3" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
+[node name="SmallObstacle3" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
 position = Vector2(4282, 515)
 
-[node name="MediumObstacle4" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
+[node name="MediumObstacle4" parent="ObstaclesHell" instance=ExtResource("9_ososx")]
 position = Vector2(4813, 588)
 rotation = -3.14159
 scale = Vector2(1, -1)
 
-[node name="TreeObstacle" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
+[node name="TreeObstacle" parent="ObstaclesHell" instance=ExtResource("11_u0f4t")]
 position = Vector2(4556, 303)
 
-[node name="BigObstacle3" parent="ObtaclesHell" instance=ExtResource("10_1lj3y")]
+[node name="BigObstacle3" parent="ObstaclesHell" instance=ExtResource("10_1lj3y")]
 position = Vector2(5782, 545)
 
-[node name="SmallObstacle4" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
+[node name="SmallObstacle4" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
 position = Vector2(5994, 520)
 rotation = -3.14159
 scale = Vector2(1, -1)
 
-[node name="TreeObstacle2" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
+[node name="TreeObstacle2" parent="ObstaclesHell" instance=ExtResource("11_u0f4t")]
 position = Vector2(6137, 331)
 rotation = -3.14159
 scale = Vector2(1, -1)
 
-[node name="TreeObstacle3" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
+[node name="TreeObstacle3" parent="ObstaclesHell" instance=ExtResource("11_u0f4t")]
 position = Vector2(7504, 331)
 rotation = -3.14159
 scale = Vector2(1, -1)
 
-[node name="Cart2" parent="ObtaclesHell" instance=ExtResource("7_i5yvu")]
+[node name="Cart2" parent="ObstaclesHell" instance=ExtResource("7_i5yvu")]
 position = Vector2(4810, 243)
+
+[node name="BigObstacle4" parent="ObstaclesHell" instance=ExtResource("10_1lj3y")]
+position = Vector2(7468, 543)
+
+[node name="MediumObstacle5" parent="ObstaclesHell" instance=ExtResource("9_ososx")]
+position = Vector2(7278, 592)
+
+[node name="SmallObstacle5" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
+position = Vector2(8577, 520)
+
+[node name="SmallObstacle6" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
+position = Vector2(8420, 531)
 
 [node name="Player" parent="." instance=ExtResource("2_08ny7")]
 position = Vector2(-281, 506)
@@ -141,45 +196,3 @@ remote_path = NodePath("../../Camera2D")
 stream = ExtResource("12_a60n6")
 volume_db = -20.0
 autoplay = true
-
-[node name="Uniconr" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(2702, 558)
-
-[node name="Node2D" parent="." instance=ExtResource("7_oxd3m")]
-position = Vector2(2420, 166)
-
-[node name="Uniconr2" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(4658, 555)
-
-[node name="Uniconr3" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(4979, 548)
-
-[node name="Uniconr4" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(4036, 565)
-
-[node name="Uniconr5" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(4367, 555)
-
-[node name="MediumObstacle" parent="." instance=ExtResource("9_ososx")]
-position = Vector2(7278, 592)
-
-[node name="BigObstacle" parent="." instance=ExtResource("10_1lj3y")]
-position = Vector2(7468, 543)
-
-[node name="Uniconr6" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(8104, 562)
-
-[node name="Uniconr8" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(8232, 560)
-
-[node name="Uniconr7" parent="." instance=ExtResource("5_oeeg5")]
-position = Vector2(8564, 560)
-
-[node name="SmallObstacle" parent="." instance=ExtResource("7_k8s3e")]
-position = Vector2(8577, 520)
-
-[node name="SmallObstacle2" parent="." instance=ExtResource("7_k8s3e")]
-position = Vector2(8420, 531)
-
-[node name="Node2D2" parent="." instance=ExtResource("7_oxd3m")]
-position = Vector2(7958, 45)
