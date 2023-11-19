@@ -1,29 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddha1rhn5rug5"]
+[gd_scene load_steps=2 format=3 uid="uid://ddha1rhn5rug5"]
 
 [ext_resource type="Texture2D" uid="uid://bybs7lf23p7il" path="res://assets/hell/Carro.png" id="1_364ng"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0c7o1"]
-radius = 19.0
-height = 46.0
 
 [node name="BigObstacle" type="Node2D"]
 scale = Vector2(0.25, 0.25)
 
 [node name="CharacterBody" type="CharacterBody2D" parent="."]
-position = Vector2(908, 400)
+position = Vector2(-232, -372)
 scale = Vector2(8, 8)
 collision_layer = 2
 collision_mask = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody"]
 texture_filter = 1
-position = Vector2(26.5, 39.5)
-scale = Vector2(0.93, 0.96)
+position = Vector2(28.5, 47.5)
+scale = Vector2(2, 2)
 texture = ExtResource("1_364ng")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody"]
-position = Vector2(30.5, 45.5)
-shape = SubResource("CapsuleShape2D_0c7o1")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody"]
+polygon = PackedVector2Array(-27.5, 71, 28.5, 13, 87.5, 87.5, 88, 105)
 
 [node name="Life" type="Timer" parent="."]
 one_shot = true

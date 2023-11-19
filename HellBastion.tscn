@@ -8,6 +8,8 @@ size = Vector2(162, 322)
 [node name="Cart" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 texture_filter = 1
@@ -18,3 +20,4 @@ texture = ExtResource("1_3mo5t")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(464, 259)
 shape = SubResource("RectangleShape2D_s2w8p")
+disabled = true
