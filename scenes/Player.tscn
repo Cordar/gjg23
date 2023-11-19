@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/Player.gd" id="1_30ub7"]
 [ext_resource type="PackedScene" uid="uid://bxwppc2dimlci" path="res://scenes/Characters/PlayerHeaven.tscn" id="2_8emnl"]
-[ext_resource type="PackedScene" uid="uid://cyflwyqbn1a7q" path="res://scenes/Characters/PlayerHell.tscn" id="3_pqyxq"]
+[ext_resource type="PackedScene" path="res://scenes/Characters/PlayerHell.tscn" id="3_pqyxq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cfpbe"]
 radius = 8.0
