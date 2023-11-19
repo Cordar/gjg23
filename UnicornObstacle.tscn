@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbpfs2pv72ssw"]
+
+[ext_resource type="Texture2D" uid="uid://bxl8qldc7n01p" path="res://assets/Heaven/unicorn_head.png" id="1_ljrjl"]
+[ext_resource type="Texture2D" uid="uid://bd63o416x2xij" path="res://assets/Heaven/unicorn_ass.png" id="2_nf1nv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iaa3l"]
+radius = 64.1249
+
+[node name="Uniconr" type="Node2D"]
+visible = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Head" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-117, -95)
+texture = ExtResource("1_ljrjl")
+
+[node name="Body" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("2_nf1nv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-4, 38)
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_iaa3l")

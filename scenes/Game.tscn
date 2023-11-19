@@ -1,16 +1,19 @@
-[gd_scene load_steps=12 format=3 uid="uid://bgs422ykx2dt0"]
+[gd_scene load_steps=15 format=3 uid="uid://bgs422ykx2dt0"]
 
 [ext_resource type="Script" path="res://scenes/Game.gd" id="1_lniv4"]
 [ext_resource type="PackedScene" uid="uid://dp3e86e84nqv4" path="res://scenes/Player.tscn" id="2_08ny7"]
 [ext_resource type="Texture2D" uid="uid://gpt8052gi6y2" path="res://assets/hell/Fondo.png" id="3_dv3mp"]
-[ext_resource type="PackedScene" uid="uid://ne216dev0n8a" path="res://obstacle_box_2.tscn" id="5_voy3i"]
+[ext_resource type="PackedScene" uid="uid://bbpfs2pv72ssw" path="res://UnicornObstacle.tscn" id="5_oeeg5"]
+[ext_resource type="PackedScene" uid="uid://dm53vh1kvnalt" path="res://MommyUnicorn.tscn" id="6_ccqnv"]
 [ext_resource type="PackedScene" uid="uid://duqfr05vpxgqk" path="res://scenes/Floor.tscn" id="6_t3hqq"]
 [ext_resource type="PackedScene" uid="uid://kvydhi8xalyc" path="res://HellBastion.tscn" id="7_i5yvu"]
 [ext_resource type="PackedScene" uid="uid://13cm7ouaxc7n" path="res://scenes/Obstacles/small_obstacle.tscn" id="7_k8s3e"]
+[ext_resource type="PackedScene" uid="uid://lu5x45gxs5ot" path="res://CloudObstacle.tscn" id="7_oxd3m"]
 [ext_resource type="PackedScene" uid="uid://pi3qxhnxf4js" path="res://scenes/Obstacles/MediumObstacle.tscn" id="9_ososx"]
 [ext_resource type="PackedScene" uid="uid://ddha1rhn5rug5" path="res://scenes/Obstacles/BigObstacle.tscn" id="10_1lj3y"]
 [ext_resource type="PackedScene" uid="uid://bcfd5iifvgoab" path="res://scenes/Obstacles/AirHellObstacle.tscn" id="11_u0f4t"]
 [ext_resource type="AudioStream" uid="uid://c4co3q830dm7b" path="res://EditedMusic.mp3" id="12_a60n6"]
+[ext_resource type="PackedScene" uid="uid://i7ry7tmmry5" path="res://GnomeRainbow.tscn" id="12_qlrd8"]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_lniv4")
@@ -19,7 +22,7 @@ script = ExtResource("1_lniv4")
 position = Vector2(0, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-19, -1067)
+position = Vector2(94.0001, -994)
 scale = Vector2(3, 3)
 zoom = Vector2(0.75, 0.75)
 limit_left = 0
@@ -40,120 +43,63 @@ texture = ExtResource("3_dv3mp")
 
 [node name="ObstaclesHeeaven" type="Node" parent="."]
 
-[node name="ObstacleBox15" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2354, 369)
+[node name="Unicorn" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+position = Vector2(925, 552)
 
-[node name="ObstacleBox14" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2354, 428)
+[node name="Unicorn2" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+position = Vector2(2045, 551)
 
-[node name="ObstacleBox16" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2694, 548)
+[node name="Node2D2" parent="ObstaclesHeeaven" instance=ExtResource("6_ccqnv")]
+position = Vector2(1286, 557)
 
-[node name="ObstacleBox17" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2803, 463)
+[node name="Node2D" parent="ObstaclesHeeaven" instance=ExtResource("12_qlrd8")]
+position = Vector2(3401, 109)
 
-[node name="ObstacleBox19" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2942, 545)
+[node name="Uniconr6" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+position = Vector2(6470, 568)
 
-[node name="ObstacleBox20" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2941, 482)
+[node name="Uniconr7" parent="ObstaclesHeeaven" instance=ExtResource("5_oeeg5")]
+position = Vector2(6808, 566)
 
-[node name="ObstacleBox21" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2940, 422)
+[node name="MommyUnicorn" parent="ObstaclesHeeaven" instance=ExtResource("6_ccqnv")]
+position = Vector2(6956, 549)
 
-[node name="ObstacleBox23" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(3243, 545)
-
-[node name="ObstacleBox24" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(3593, 549)
-
-[node name="ObstacleBox25" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(3741, 548)
-
-[node name="ObstacleBox26" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(3902, 549)
-
-[node name="ObstacleBox13" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2353, 488)
-
-[node name="ObstacleBox12" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2353, 549)
-
-[node name="ObstacleBox6" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2090, 551)
-
-[node name="ObstacleBox5" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(2055, 550)
-
-[node name="ObstacleBox18" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(1482, 548)
-
-[node name="ObstacleBox22" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5315, 579)
-
-[node name="ObstacleBox27" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5316, 519)
-
-[node name="ObstacleBox28" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5377, 520)
-
-[node name="ObstacleBox29" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5376, 578)
-
-[node name="ObstacleBox30" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5603, 580)
-
-[node name="ObstacleBox31" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5604, 519)
-
-[node name="ObstacleBox32" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5744, 518)
-
-[node name="ObstacleBox33" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(5747, 576)
-
-[node name="ObstacleBox2" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(1119, 549)
-
-[node name="ObstacleBox3" parent="ObstaclesHeeaven" instance=ExtResource("5_voy3i")]
-position = Vector2(828, 548)
+[node name="Node2D3" parent="ObstaclesHeeaven" instance=ExtResource("7_oxd3m")]
+position = Vector2(5388, 169)
 
 [node name="ObtaclesHell" type="Node" parent="."]
 
 [node name="Cart" parent="ObtaclesHell" instance=ExtResource("7_i5yvu")]
-position = Vector2(1267, 223)
+position = Vector2(1260, 228)
 
 [node name="SmallObstacle" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
-position = Vector2(656, 526)
+position = Vector2(617, 526)
 
 [node name="Node2D" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
-position = Vector2(2774, 320)
+position = Vector2(2726, 343)
 
 [node name="MediumObstacle" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
-position = Vector2(959, 604)
+position = Vector2(919, 597)
 
 [node name="BigObstacle" parent="ObtaclesHell" instance=ExtResource("10_1lj3y")]
 position = Vector2(1293, 544)
 
 [node name="MediumObstacle2" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
-position = Vector2(2127, 602)
+position = Vector2(2083, 594)
 
 [node name="BigObstacle2" parent="ObtaclesHell" instance=ExtResource("10_1lj3y")]
-position = Vector2(3113, 545)
+position = Vector2(3047, 548)
 
 [node name="SmallObstacle2" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
-position = Vector2(2487, 531)
+position = Vector2(2402, 523)
 scale = Vector2(-0.988237, 1.03042)
-
-[node name="Cart2" parent="ObtaclesHell" instance=ExtResource("7_i5yvu")]
-position = Vector2(3026, 245)
 
 [node name="MediumObstacle3" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
 position = Vector2(3932, 590)
 scale = Vector2(0.998276, 1)
 
 [node name="SmallObstacle3" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
-position = Vector2(4278, 540)
+position = Vector2(4282, 515)
 
 [node name="MediumObstacle4" parent="ObtaclesHell" instance=ExtResource("9_ososx")]
 position = Vector2(4813, 588)
@@ -163,8 +109,29 @@ scale = Vector2(1, -1)
 [node name="TreeObstacle" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
 position = Vector2(4556, 303)
 
+[node name="BigObstacle3" parent="ObtaclesHell" instance=ExtResource("10_1lj3y")]
+position = Vector2(5782, 545)
+
+[node name="SmallObstacle4" parent="ObtaclesHell" instance=ExtResource("7_k8s3e")]
+position = Vector2(5994, 520)
+rotation = -3.14159
+scale = Vector2(1, -1)
+
+[node name="TreeObstacle2" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
+position = Vector2(6137, 331)
+rotation = -3.14159
+scale = Vector2(1, -1)
+
+[node name="TreeObstacle3" parent="ObtaclesHell" instance=ExtResource("11_u0f4t")]
+position = Vector2(7504, 331)
+rotation = -3.14159
+scale = Vector2(1, -1)
+
+[node name="Cart2" parent="ObtaclesHell" instance=ExtResource("7_i5yvu")]
+position = Vector2(4810, 243)
+
 [node name="Player" parent="." instance=ExtResource("2_08ny7")]
-position = Vector2(-394, 433)
+position = Vector2(-281, 506)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 position = Vector2(125, -500)
@@ -175,5 +142,44 @@ stream = ExtResource("12_a60n6")
 volume_db = -20.0
 autoplay = true
 
+[node name="Uniconr" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(2702, 558)
+
+[node name="Node2D" parent="." instance=ExtResource("7_oxd3m")]
+position = Vector2(2420, 166)
+
+[node name="Uniconr2" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(4658, 555)
+
+[node name="Uniconr3" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(4979, 548)
+
+[node name="Uniconr4" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(4036, 565)
+
+[node name="Uniconr5" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(4367, 555)
+
+[node name="MediumObstacle" parent="." instance=ExtResource("9_ososx")]
+position = Vector2(7278, 592)
+
 [node name="BigObstacle" parent="." instance=ExtResource("10_1lj3y")]
-position = Vector2(6027, 539)
+position = Vector2(7468, 543)
+
+[node name="Uniconr6" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(8104, 562)
+
+[node name="Uniconr8" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(8232, 560)
+
+[node name="Uniconr7" parent="." instance=ExtResource("5_oeeg5")]
+position = Vector2(8564, 560)
+
+[node name="SmallObstacle" parent="." instance=ExtResource("7_k8s3e")]
+position = Vector2(8577, 520)
+
+[node name="SmallObstacle2" parent="." instance=ExtResource("7_k8s3e")]
+position = Vector2(8420, 531)
+
+[node name="Node2D2" parent="." instance=ExtResource("7_oxd3m")]
+position = Vector2(7958, 45)

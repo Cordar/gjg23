@@ -20,4 +20,3 @@ texture = ExtResource("1_3mo5t")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(464, 259)
 shape = SubResource("RectangleShape2D_s2w8p")
-disabled = true

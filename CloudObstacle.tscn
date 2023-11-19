@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://lu5x45gxs5ot"]
+
+[ext_resource type="Texture2D" uid="uid://f63whnmih8r6" path="res://assets/Heaven/cloud_r_arm.png" id="1_c7hpb"]
+[ext_resource type="Texture2D" uid="uid://docux82yvxrar" path="res://assets/Heaven/cloud_body.png" id="2_soip8"]
+[ext_resource type="Texture2D" uid="uid://0fov5p8juroe" path="res://assets/Heaven/cloud_l_arm.png" id="3_xmfpm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m4k2h"]
+radius = 209.002
+
+[node name="Node2D" type="Node2D"]
+visible = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CloudRArm" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-283, 8)
+texture = ExtResource("1_c7hpb")
+
+[node name="CloudBody" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, 1)
+texture = ExtResource("2_soip8")
+
+[node name="CloudLArm" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(67, 177)
+texture = ExtResource("3_xmfpm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-70, -6)
+shape = SubResource("CircleShape2D_m4k2h")
