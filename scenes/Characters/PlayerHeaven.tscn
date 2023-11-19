@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://bxwppc2dimlci"]
 
 [node name="PlayerHeaven" type="Node2D"]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
