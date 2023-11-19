@@ -1,7 +1,406 @@
-[gd_scene format=3 uid="uid://bxwppc2dimlci"]
+[gd_scene load_steps=19 format=3 uid="uid://bxwppc2dimlci"]
+
+[ext_resource type="Texture2D" uid="uid://0ckptb140i65" path="res://assets/heaven/MC_Butterfly/body_run.png" id="1_3mwdv"]
+[ext_resource type="Texture2D" uid="uid://blbbongxit5wm" path="res://assets/heaven/MC_Butterfly/l_arm_run.png" id="2_irdk3"]
+[ext_resource type="Texture2D" uid="uid://bj1f3ul0vystr" path="res://assets/heaven/MC_Butterfly/r_arm_run.png" id="3_thqwl"]
+[ext_resource type="Texture2D" uid="uid://yoydevh380nu" path="res://assets/heaven/MC_Butterfly/head_smile.png" id="4_pjxe0"]
+[ext_resource type="Texture2D" uid="uid://smjpmrks3tw5" path="res://assets/heaven/MC_Butterfly/front_hair.png" id="5_dcqp6"]
+[ext_resource type="Texture2D" uid="uid://o0sy4hn5yskw" path="res://assets/heaven/MC_Butterfly/back_hair_run.png" id="6_7pmb1"]
+[ext_resource type="Texture2D" uid="uid://crn8ujxdr1mo1" path="res://assets/heaven/MC_Butterfly/top_hair.png" id="7_cwj3x"]
+[ext_resource type="Texture2D" uid="uid://dchot13mhomhf" path="res://assets/heaven/MC_Butterfly/butterfly_open.png" id="8_eqcj1"]
+[ext_resource type="Texture2D" uid="uid://baq3xec1lrcro" path="res://assets/heaven/MC_Butterfly/open_eyes.png" id="9_efbi5"]
+[ext_resource type="Texture2D" uid="uid://d1rktml7rogkg" path="res://assets/heaven/MC_Butterfly/rl_leg_run.png" id="10_vkwnj"]
+[ext_resource type="Texture2D" uid="uid://d16x1nv4a5kib" path="res://assets/heaven/MC_Butterfly/rl_leg2_run.png" id="11_thevq"]
+[ext_resource type="Texture2D" uid="uid://gf5c5jumm2n6" path="res://assets/heaven/MC_Butterfly/butterfly_closed.png" id="12_spwfy"]
+[ext_resource type="Texture2D" uid="uid://buwkrhwba27jg" path="res://assets/heaven/MC_Butterfly/semiclosed_eyes.png" id="13_xhmcr"]
+[ext_resource type="Texture2D" uid="uid://cwfj8jd85n1io" path="res://assets/heaven/MC_Butterfly/closed_eyes.png" id="14_w8gmh"]
+
+[sub_resource type="Animation" id="Animation_w0v34"]
+resource_name = "run"
+length = 0.3
+loop_mode = 1
+step = 0.005
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LegLeft:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("10_vkwnj"), ExtResource("11_thevq"), ExtResource("10_vkwnj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LegRight:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_thevq"), ExtResource("10_vkwnj"), ExtResource("11_thevq")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LegLeft:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Vector2(-15, 59), Vector2(-31, 47), Vector2(-15, 59)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LegRight:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Vector2(11, 66), Vector2(27, 79), Vector2(11, 66)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("hip/Head/HairFront/ButterflyOpen:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("12_spwfy"), ExtResource("8_eqcj1"), ExtResource("12_spwfy")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("hip/Head/Eyes:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("9_efbi5"), ExtResource("13_xhmcr"), ExtResource("14_w8gmh")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("hip/ArmRight:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.183577, 0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("hip/ArmLeft:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.178296, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("hip:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 29), Vector2(1, 35), Vector2(1, 29)]
+}
+
+[sub_resource type="Animation" id="Animation_tpe6k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LegLeft:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-17, 30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LegRight:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 34)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hip/Head/HairFront/ButterflyOpen:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_eqcj1")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("hip/Head/Eyes:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("9_efbi5")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("hip/ArmRight:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("hip/ArmLeft:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("hip:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 29)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("LegLeft:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("10_vkwnj")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("LegRight:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("11_thevq")]
+}
+
+[sub_resource type="Animation" id="Animation_jkx6u"]
+resource_name = "jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LegLeft:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("10_vkwnj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LegRight:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("10_vkwnj")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hip/Head/Eyes:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_xhmcr"), ExtResource("14_w8gmh"), ExtResource("13_xhmcr")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("hip/ArmRight:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.177457, 0.170958]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("hip/ArmLeft:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.172353, -0.222337]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LegLeft:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-15, 59)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("LegRight:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(22, 66)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3c057"]
+_data = {
+"RESET": SubResource("Animation_tpe6k"),
+"jump": SubResource("Animation_jkx6u"),
+"run": SubResource("Animation_w0v34")
+}
 
 [node name="PlayerHeaven" type="Node2D"]
 
-[node name="Skeleton2D" type="Skeleton2D" parent="."]
+[node name="hip" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(1, 29)
+scale = Vector2(1.005, 1.005)
+texture = ExtResource("1_3mwdv")
+offset = Vector2(2, -29)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="ArmRight" type="Sprite2D" parent="hip"]
+z_index = 4
+position = Vector2(34, -61)
+texture = ExtResource("2_irdk3")
+offset = Vector2(36, 30)
+
+[node name="ArmLeft" type="Sprite2D" parent="hip"]
+z_index = -1
+position = Vector2(-28, -70)
+texture = ExtResource("3_thqwl")
+offset = Vector2(-44, 27)
+
+[node name="Head" type="Sprite2D" parent="hip"]
+position = Vector2(4, -76)
+rotation = 0.0563016
+texture = ExtResource("4_pjxe0")
+offset = Vector2(-5, -91)
+
+[node name="HairFront" type="Sprite2D" parent="hip/Head"]
+position = Vector2(6, -205)
+texture = ExtResource("5_dcqp6")
+offset = Vector2(3, 98)
+
+[node name="HairBack" type="Sprite2D" parent="hip/Head/HairFront"]
+z_index = -3
+position = Vector2(-30, 7)
+rotation = -0.0580153
+texture = ExtResource("6_7pmb1")
+offset = Vector2(-67, 136)
+
+[node name="TopHair" type="Sprite2D" parent="hip/Head/HairFront"]
+position = Vector2(20, 0)
+texture = ExtResource("7_cwj3x")
+offset = Vector2(25, -32)
+
+[node name="ButterflyOpen" type="Sprite2D" parent="hip/Head/HairFront"]
+position = Vector2(-79, 25)
+texture = ExtResource("8_eqcj1")
+
+[node name="Eyes" type="Sprite2D" parent="hip/Head"]
+z_index = 1
+position = Vector2(24, -68)
+texture = ExtResource("9_efbi5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "run"
+libraries = {
+"": SubResource("AnimationLibrary_3c057")
+}
+
+[node name="LegLeft" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-17, 30)
+texture = ExtResource("10_vkwnj")
+offset = Vector2(-11, 30)
+
+[node name="LegRight" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(4, 34)
+texture = ExtResource("11_thevq")
+offset = Vector2(-28, 11)
