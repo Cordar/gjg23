@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bgs422ykx2dt0"]
+[gd_scene load_steps=16 format=3 uid="uid://bgs422ykx2dt0"]
 
 [ext_resource type="Script" path="res://scenes/Game.gd" id="1_lniv4"]
 [ext_resource type="PackedScene" uid="uid://dp3e86e84nqv4" path="res://scenes/Player.tscn" id="2_08ny7"]
@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://bcfd5iifvgoab" path="res://scenes/Obstacles/AirHellObstacle.tscn" id="11_u0f4t"]
 [ext_resource type="AudioStream" uid="uid://c4co3q830dm7b" path="res://EditedMusic.mp3" id="12_a60n6"]
 [ext_resource type="PackedScene" uid="uid://i7ry7tmmry5" path="res://GnomeRainbow.tscn" id="12_qlrd8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfvl1"]
+size = Vector2(20, 500)
 
 [node name="Game" type="Node"]
 script = ExtResource("1_lniv4")
@@ -93,11 +96,11 @@ position = Vector2(4979, 548)
 
 [node name="Unicorn10" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
 visible = false
-position = Vector2(8232, 560)
+position = Vector2(8438, 567)
 
 [node name="Uniconr6" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
 visible = false
-position = Vector2(8104, 562)
+position = Vector2(8310, 569)
 
 [node name="Unicorn3" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
 visible = false
@@ -105,7 +108,7 @@ position = Vector2(2702, 558)
 
 [node name="Uniconr7" parent="ObstaclesHeaven" instance=ExtResource("5_oeeg5")]
 visible = false
-position = Vector2(8564, 560)
+position = Vector2(9252, 580)
 
 [node name="Node2D2" parent="ObstaclesHeaven" instance=ExtResource("7_oxd3m")]
 position = Vector2(7958, 45)
@@ -180,10 +183,10 @@ position = Vector2(7468, 543)
 position = Vector2(7278, 592)
 
 [node name="SmallObstacle5" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
-position = Vector2(8577, 520)
+position = Vector2(8905, 536)
 
 [node name="SmallObstacle6" parent="ObstaclesHell" instance=ExtResource("7_k8s3e")]
-position = Vector2(8420, 531)
+position = Vector2(8756, 544)
 
 [node name="Player" parent="." instance=ExtResource("2_08ny7")]
 position = Vector2(-281, 506)
@@ -196,3 +199,11 @@ remote_path = NodePath("../../Camera2D")
 stream = ExtResource("12_a60n6")
 volume_db = -20.0
 autoplay = true
+
+[node name="WinBox" type="Area2D" parent="."]
+position = Vector2(9524, 454)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinBox"]
+shape = SubResource("RectangleShape2D_gfvl1")
+
+[connection signal="body_entered" from="WinBox" to="." method="_on_win_box_body_entered"]
