@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dou7jjtgj7p1t"
-path="res://.godot/imported/Cartell.png-db424fb0431c851bc50d8bd161a5fb6b.ctex"
+uid="uid://0vehivrc0yfu"
+path="res://.godot/imported/Salt.png-a7b7ae7e8ddceabdd3f1406ca10c2b4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/Cartell.png"
-dest_files=["res://.godot/imported/Cartell.png-db424fb0431c851bc50d8bd161a5fb6b.ctex"]
+source_file="res://assets/hell/Salt.png"
+dest_files=["res://.godot/imported/Salt.png-a7b7ae7e8ddceabdd3f1406ca10c2b4f.ctex"]
 
 [params]
 

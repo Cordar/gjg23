@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpf86ykeuf3il"
-path="res://.godot/imported/Srun.png-8000ef25a0fd403b7748afdbf23efe1a.ctex"
+uid="uid://bybs7lf23p7il"
+path="res://.godot/imported/Carro.png-a046c14b370c89f8fb53cac42ae9eab2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/Srun.png"
-dest_files=["res://.godot/imported/Srun.png-8000ef25a0fd403b7748afdbf23efe1a.ctex"]
+source_file="res://assets/hell/Carro.png"
+dest_files=["res://.godot/imported/Carro.png-a046c14b370c89f8fb53cac42ae9eab2.ctex"]
 
 [params]
 

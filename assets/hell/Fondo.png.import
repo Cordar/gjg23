@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0vehivrc0yfu"
-path="res://.godot/imported/Salt.png-4fcc7dd850c09a5da662dcaa2c26e552.ctex"
+uid="uid://gpt8052gi6y2"
+path="res://.godot/imported/Fondo.png-e83627a9a75b810dae848196b7feef85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/Salt.png"
-dest_files=["res://.godot/imported/Salt.png-4fcc7dd850c09a5da662dcaa2c26e552.ctex"]
+source_file="res://assets/hell/Fondo.png"
+dest_files=["res://.godot/imported/Fondo.png-e83627a9a75b810dae848196b7feef85.ctex"]
 
 [params]
 

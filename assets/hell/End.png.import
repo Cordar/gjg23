@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dle7pd3w6y8uh"
-path="res://.godot/imported/Roca.png-31368a66a7b5845043b569e220c6a4d4.ctex"
+uid="uid://rgfmpbscxjmj"
+path="res://.godot/imported/End.png-9cc7030c7a395b8d5f540bae491ce683.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/Roca.png"
-dest_files=["res://.godot/imported/Roca.png-31368a66a7b5845043b569e220c6a4d4.ctex"]
+source_file="res://assets/hell/End.png"
+dest_files=["res://.godot/imported/End.png-9cc7030c7a395b8d5f540bae491ce683.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhqpknvto4ew2"
-path="res://.godot/imported/Arbre.png-80e438665482ac13229e71418b75d4f2.ctex"
+uid="uid://dou7jjtgj7p1t"
+path="res://.godot/imported/Cartell.png-59f635ed668fae31ad5bb2ebd86ce99f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/Arbre.png"
-dest_files=["res://.godot/imported/Arbre.png-80e438665482ac13229e71418b75d4f2.ctex"]
+source_file="res://assets/hell/Cartell.png"
+dest_files=["res://.godot/imported/Cartell.png-59f635ed668fae31ad5bb2ebd86ce99f.ctex"]
 
 [params]
 

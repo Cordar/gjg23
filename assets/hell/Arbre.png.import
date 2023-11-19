@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rgfmpbscxjmj"
-path="res://.godot/imported/End.png-a0fc2831bfc1e96f8ec952be889027e4.ctex"
+uid="uid://bhqpknvto4ew2"
+path="res://.godot/imported/Arbre.png-bc218478d8ab942095a87d650f7d2d3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/End.png"
-dest_files=["res://.godot/imported/End.png-a0fc2831bfc1e96f8ec952be889027e4.ctex"]
+source_file="res://assets/hell/Arbre.png"
+dest_files=["res://.godot/imported/Arbre.png-bc218478d8ab942095a87d650f7d2d3e.ctex"]
 
 [params]
 

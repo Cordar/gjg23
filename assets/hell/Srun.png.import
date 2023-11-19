@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://das7qx78850m7"
-path="res://.godot/imported/arbre2.png-e86b99d73c3cb507221a600af16bb2d6.ctex"
+uid="uid://dpf86ykeuf3il"
+path="res://.godot/imported/Srun.png-d80a3b510875ddb6c9ff0dc3e5566e37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/arbre2.png"
-dest_files=["res://.godot/imported/arbre2.png-e86b99d73c3cb507221a600af16bb2d6.ctex"]
+source_file="res://assets/hell/Srun.png"
+dest_files=["res://.godot/imported/Srun.png-d80a3b510875ddb6c9ff0dc3e5566e37.ctex"]
 
 [params]
 

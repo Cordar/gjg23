@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bybs7lf23p7il"
-path="res://.godot/imported/Carro.png-2990478d7360e382e8aba34d269f48ff.ctex"
+uid="uid://ckuiyt8rmgwbu"
+path="res://.godot/imported/Terra.png-f122b7b83ff7bfb7b70146c59803f651.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetsAlex/assetshell/Carro.png"
-dest_files=["res://.godot/imported/Carro.png-2990478d7360e382e8aba34d269f48ff.ctex"]
+source_file="res://assets/hell/Terra.png"
+dest_files=["res://.godot/imported/Terra.png-f122b7b83ff7bfb7b70146c59803f651.ctex"]
 
 [params]
 
