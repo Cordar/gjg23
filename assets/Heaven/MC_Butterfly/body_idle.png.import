@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crmjivy8uwc3"
-path="res://.godot/imported/body_idle.png-3529dcfc6655c27c4b1252cf3b9bf0c7.ctex"
+path="res://.godot/imported/body_idle.png-2cdf3e92de44c7f9432e297e9277ad1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/heaven/MC_Butterfly/body_idle.png"
-dest_files=["res://.godot/imported/body_idle.png-3529dcfc6655c27c4b1252cf3b9bf0c7.ctex"]
+source_file="res://assets/Heaven/MC_Butterfly/body_idle.png"
+dest_files=["res://.godot/imported/body_idle.png-2cdf3e92de44c7f9432e297e9277ad1e.ctex"]
 
 [params]
 

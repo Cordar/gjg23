@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn2vtoo5gs54t"
-path="res://.godot/imported/gnome_rainbow.png-fb9e008028ff426448c7149c5cb72c4a.ctex"
+path="res://.godot/imported/gnome_rainbow.png-df3e3b49bda6ffd90d1f55a3ba36b61b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/heaven/gnome_rainbow.png"
-dest_files=["res://.godot/imported/gnome_rainbow.png-fb9e008028ff426448c7149c5cb72c4a.ctex"]
+source_file="res://assets/Heaven/gnome_rainbow.png"
+dest_files=["res://.godot/imported/gnome_rainbow.png-df3e3b49bda6ffd90d1f55a3ba36b61b.ctex"]
 
 [params]
 

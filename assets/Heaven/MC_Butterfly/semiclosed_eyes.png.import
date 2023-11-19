@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buwkrhwba27jg"
-path="res://.godot/imported/semiclosed_eyes.png-10010a4e79959c9297604072d40b92ee.ctex"
+path="res://.godot/imported/semiclosed_eyes.png-08d68d2a41e7aa9d4c4edbea35613a11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/heaven/MC_Butterfly/semiclosed_eyes.png"
-dest_files=["res://.godot/imported/semiclosed_eyes.png-10010a4e79959c9297604072d40b92ee.ctex"]
+source_file="res://assets/Heaven/MC_Butterfly/semiclosed_eyes.png"
+dest_files=["res://.godot/imported/semiclosed_eyes.png-08d68d2a41e7aa9d4c4edbea35613a11.ctex"]
 
 [params]
 

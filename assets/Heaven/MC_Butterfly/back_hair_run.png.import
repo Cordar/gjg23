@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o0sy4hn5yskw"
-path="res://.godot/imported/back_hair_run.png-48bc08123ab611a556ae29a863daa1ca.ctex"
+path="res://.godot/imported/back_hair_run.png-8d621cc70948a1297684a3cd11df7322.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/heaven/MC_Butterfly/back_hair_run.png"
-dest_files=["res://.godot/imported/back_hair_run.png-48bc08123ab611a556ae29a863daa1ca.ctex"]
+source_file="res://assets/Heaven/MC_Butterfly/back_hair_run.png"
+dest_files=["res://.godot/imported/back_hair_run.png-8d621cc70948a1297684a3cd11df7322.ctex"]
 
 [params]
 

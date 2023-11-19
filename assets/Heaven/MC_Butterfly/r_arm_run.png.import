@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj1f3ul0vystr"
-path="res://.godot/imported/r_arm_run.png-c818d70b0eabe407168733c3d637b584.ctex"
+path="res://.godot/imported/r_arm_run.png-492f70fb982e17784af4fc3ec0ec751d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/heaven/MC_Butterfly/r_arm_run.png"
-dest_files=["res://.godot/imported/r_arm_run.png-c818d70b0eabe407168733c3d637b584.ctex"]
+source_file="res://assets/Heaven/MC_Butterfly/r_arm_run.png"
+dest_files=["res://.godot/imported/r_arm_run.png-492f70fb982e17784af4fc3ec0ec751d.ctex"]
 
 [params]
 
