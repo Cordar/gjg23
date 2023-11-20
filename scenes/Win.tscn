@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2gobs5ripqv6"]
+[gd_scene load_steps=5 format=3 uid="uid://b2gobs5ripqv6"]
 
-[ext_resource type="Texture2D" uid="uid://8ax0jghyqnr5" path="res://assets/heaven/MC_Butterfly.png" id="1_dde5u"]
-[ext_resource type="Texture2D" uid="uid://bmmj0g71a4vwb" path="res://assets/heaven/MC_Spider.png" id="2_xxw6d"]
+[ext_resource type="Texture2D" uid="uid://6ehs608idonr" path="res://assets/introscreen.png" id="1_uxafn"]
+[ext_resource type="Texture2D" uid="uid://bovonewiim0l2" path="res://assets/button.png" id="2_cmt3g"]
+[ext_resource type="Script" path="res://scenes/PlayButton.gd" id="3_iqe5k"]
+[ext_resource type="AudioStream" uid="uid://cgx25m4ras570" path="res://assets/resonant-victory-glbml-22044.mp3" id="4_euwi2"]
 
 [node name="Win" type="Control"]
 layout_mode = 3
@@ -11,24 +13,40 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="McButterfly" type="Sprite2D" parent="."]
-position = Vector2(230, 376)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_dde5u")
+[node name="Introscreen" type="Sprite2D" parent="."]
+position = Vector2(579, 323)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_uxafn")
 
-[node name="McSpider" type="Sprite2D" parent="."]
-position = Vector2(917, 374)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_xxw6d")
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 690.0
+offset_top = 347.0
+offset_right = 1128.0
+offset_bottom = 453.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+text = "Restart"
+icon = ExtResource("2_cmt3g")
+icon_alignment = 1
+script = ExtResource("3_iqe5k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_euwi2")
+volume_db = -20.0
+autoplay = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 232.0
-offset_top = 7.0
-offset_right = 1422.0
-offset_bottom = 227.0
+offset_left = 136.0
+offset_top = 17.0
+offset_right = 621.0
+offset_bottom = 127.0
 theme_override_font_sizes/normal_font_size = 80
-text = "Gracias por jugar!!"
+text = "YOU WIN!!!!!!"
 fit_content = true
-scroll_active = false
 autowrap_mode = 0
+
+[connection signal="mouse_entered" from="PlayButton" to="PlayButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="PlayButton" to="PlayButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_pressed"]
